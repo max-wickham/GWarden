@@ -1,0 +1,14 @@
+
+.dark-border {
+    border-color: black;
+    border-width: 2px;
+}
+
+.no-corner-radius {
+    border-radius: 0px;
+}
+
+.no-background {
+    background-color: transparent;
+    border: none;
+}

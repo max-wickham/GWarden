@@ -1,0 +1,4 @@
+data/com.gwarden.mwickham.github.desktop.in
+data/com.gwarden.mwickham.github.metainfo.xml.in
+data/com.gwarden.mwickham.github.gschema.xml
+src/main.py
