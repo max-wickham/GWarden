@@ -40,6 +40,13 @@ class ItemListPage(VBox,StateWidget):
         self.append(header_bar)
         menu_button = Gtk.MenuButton()
         menu_button.set_icon_name('open-menu-symbolic')
+        menu = Gio.Menu.new()
+        menu.append("About","app.about")
+        menu.append("Logout","app.logout")
+        self.popover = Gtk.PopoverMenu()  # Create a new popover menu
+        self.popover.set_menu_model(menu)
+        menu_button.set_popover(self.popover)
+
         header_bar.pack_end(menu_button)
         self.orientation = Gtk.Orientation.VERTICAL
         item_state_manager.subscribe(self)
